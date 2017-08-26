@@ -174,6 +174,6 @@ def main():
         await bot.edit_message(pingms, "The ping time is `%.01f seconds`" % ping)
 
 
-    bot.run("MzQwNjQ4NTQxNDM1MTk5NTAx.DF1lQA.202uvpHs30gwjCBgF8V9i4A8EYk")
+    bot.run("")
 
 main()

@@ -13,8 +13,8 @@ from operator import attrgetter
 class Stats():
     def __init__(self, bot, league_id, year):
         self.bot = bot
-        self.league_id = 273350
-        self.year = 2017
+        self.league_id = 1380682
+        self.year = 2018
         self.league = League(league_id, year)
 
     'Pulled the server channel ID to be stored in the database'
@@ -28,7 +28,7 @@ class Stats():
     async def leagueid(self, ctx, *, id: str):
         try:
             try:
-                self.league = League(int(id), 2017)
+                self.league = League(int(id), 2018)
             except:
                 await bot.say("Unable to find a league with ID \"" + id +"\".")
             print("New League ID: " + str(self.league.league_id))
@@ -163,4 +163,4 @@ class Stats():
         await self.bot.edit_message(pingms, "The ping time is `%.01f seconds`" % ping)
 
 def setup(bot):
-    bot.add_cog(Stats(bot, 273350, 2017))
+    bot.add_cog(Stats(bot, 1380682, 2018))
